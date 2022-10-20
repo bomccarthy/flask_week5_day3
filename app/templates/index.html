@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex justify-content-md-center align-items-center">
+    <h1>Greetings and welcome to the Pokemon Lookup!!!</h1>
+</div>
+<div>
+    <img src="{{ url_for('static', filename='images/pokemon_logo.png') }}" style="max-width: 90%; margin: auto; display: block;" alt="Pokemon">
+</div>
+
+{% endblock %}

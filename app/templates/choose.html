@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if pokemon_dict %}
+    <div class="d-flex justify-content-md-center align-items-center m-3">
+        <h5>I don't know that Pokemon. Did you spell the name correctly?</h5>
+    </div>
+{% endif %}
+
+    <div class="d-flex justify-content-center align-items-center">
+        <h5>Choose your Pokemon.</h5>
+    </div>
+    
+    <div class="d-flex justify-content-center container">
+        <div class="row">
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="col mx-auto w-25">
+                    {{ form.pokemon(class='form-control', placeholder='Choose Wisely') }}
+                </div>
+                <div class="col mx-auto text-center mt-2 w-25">
+                    {{ form.submit(class='btn btn-success') }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

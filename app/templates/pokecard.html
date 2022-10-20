@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="d-flex justify-content-md-center align-items-center">
+        <h5>The Pokemon you chose is...</h5>
+    </div>
+    <div class="container d-flex justify-content-md-center">
+        <div class="row">
+            <div class="col">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <img src="{{ pokemon_dict.sprite_front_shiny }}" class="card mx-auto border-0" alt="">
+                        <h5 class="card-title text-center">Name:  {{ pokemon_dict.name.title() }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-center">Ability:  {{ pokemon_dict.ability.title() }}</h6>
+                        <p class="card-text">
+                            <li>HP:  {{ pokemon_dict.base_stat_hp }}</li>
+                            <li>Defense:  {{ pokemon_dict.base_stat_defense }}</li>
+                            <li>Attack:  {{ pokemon_dict.base_stat_attack }}</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col">
+                
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col">
+                
+            </div> -->
+        </div>
+    </div>
+
+{% endblock %}
