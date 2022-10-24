@@ -1,0 +1,72 @@
+$blue: #0075BE;
+$dk_blue: #0A285F;
+$yellow: #FFCC00;
+$dk_yellow: #D5A100;
+$red: #FB1B1B;
+$black: #000000;
+$grey: #DFDFDF;
+$white: #FFFFFF;
+
+img.backcolor {
+    background-color: $yellow;
+}
+
+.card-style {
+    width: 18rem; 
+    height: auto; 
+    border-radius: 1.5rem; 
+    background-color: $yellow; 
+    border-color: $blue; 
+    border-width: 0.3rem;
+}
+
+.arrow {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+.arrow:before {
+    content: "►";
+    font-size: 16px;
+    position: absolute;
+    top: 1px;
+    left: -4px;
+  }
+  
+.list-text {
+    font-size: 1.1em;
+    font-weight: 400;
+  }
+
+.hid-backward-text {
+    color: $red;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.no-decor:link {
+    text-decoration:none;
+    color: #000;
+    color: rgba(0, 0, 0, 0);
+}
+
+.no-decor:visited {
+    text-decoration:none;
+    color: #000;
+    color: rgba(0, 0, 0, 0);
+}
+
+.no-decor:hover {
+    text-decoration:none;
+    color: #000;
+    color: rgba(0, 0, 0, 0);
+}
+
+.no-decor:active {
+    text-decoration:none;
+    color: #000;
+    color: rgba(0, 0, 0, 0);
+}

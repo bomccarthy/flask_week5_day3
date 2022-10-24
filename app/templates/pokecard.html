@@ -8,32 +8,38 @@
     <div class="container d-flex justify-content-md-center">
         <div class="row">
             <div class="col">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="{{ pokemon_dict.sprite_front_shiny }}" class="card mx-auto border-0" alt="">
-                        <h5 class="card-title text-center">Name:  {{ pokemon_dict.name.title() }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted text-center">Ability:  {{ pokemon_dict.ability.title() }}</h6>
-                        <p class="card-text">
-                            <li>HP:  {{ pokemon_dict.base_stat_hp }}</li>
-                            <li>Defense:  {{ pokemon_dict.base_stat_defense }}</li>
-                            <li>Attack:  {{ pokemon_dict.base_stat_attack }}</li>
-                        </p>
+                <div class="card mx-auto card-style">
+                    <div class="card-body text-dark">
+                        <img src="{{ pokemon_dict.official_artwork }}" class="card mx-auto border-0 backcolor" style="max-width: 90%;" alt="">
+                        <h4 class="card-title text-center">{{ pokemon_dict.name.title() }}</h4>
+                        <h5 class="card-subtitle mb-2 text-muted text-center">Ability:  {{ pokemon_dict.ability.title() }}</h5>
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <p class="card-text">
+                                    <li class="col offset-md-2 list-text arrow">HP:  {{ pokemon_dict.hp }}</li>
+                                    <li class="col offset-md-2 list-text arrow">ATT:  {{ pokemon_dict.attack }}</li>
+                                    <li class="col offset-md-2 list-text arrow">DEF:  {{ pokemon_dict.defense }}</li>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text">
+                                    <li class="col list-text arrow">SP ATT:  {{ pokemon_dict.special_attack }}</li>
+                                    <li class="col list-text arrow">SP DEF:  {{ pokemon_dict.special_defense }}</li>
+                                    <li class="col list-text arrow">Speed:  {{ pokemon_dict.speed }}</li>
+                                </p>
+                            </div>
+                            <h5 class="text-center">Base Experience:  {{ pokemon_dict.base_experience }}</h5>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="col">
-                
-            </div>
-            <div class="col">
-                
-            </div>
-            <div class="col">
-                
-            </div>
-            <div class="col">
-                
-            </div> -->
         </div>
     </div>
+    <!-- <form method="POST">
+        <div class="col mx-auto text-center mt-2 w-25">
+            {# {{ form.pokemon_dict }}
+            {{ form.submit(class='btn btn-primary') }} #}
+        </div>
+    </form> -->
 
 {% endblock %}

@@ -14,7 +14,7 @@ def choose():
     form = PokemonInputForm()
     if request.method == "POST":
         if form.validate():
-            pokemon = form.pokemon.data
+            pokemon = (form.pokemon.data).lower()
             pokemon_dict = getPokemon(pokemon)
             if isinstance(pokemon_dict, str):
                 pass
@@ -33,3 +33,6 @@ def pokecard():
 def future():
     return render_template('future.html')
 
+@app.route('/hide_em_all')
+def hide_em_all():
+    return render_template('hide_em_all.html')

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+img.backcolor {
+  background-color: #FFCC00;
+}
+
+.card-style {
+  width: 18rem;
+  height: auto;
+  border-radius: 1.5rem;
+  background-color: #FFCC00;
+  border-color: #0075BE;
+  border-width: 0.3rem;
+}
+
+.arrow {
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+.arrow:before {
+  content: "►";
+  font-size: 16px;
+  position: absolute;
+  top: 1px;
+  left: -4px;
+}
+
+.list-text {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.hid-backward-text {
+  color: #FB1B1B;
+}
+
+.bg-red {
+  background-color: #FB1B1B;
+}
+
+.no-decor:link {
+  text-decoration: none;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+}
+
+.no-decor:visited {
+  text-decoration: none;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+}
+
+.no-decor:hover {
+  text-decoration: none;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+}
+
+.no-decor:active {
+  text-decoration: none;
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+}
+
+/*# sourceMappingURL=sass.css.map */
